@@ -1,3 +1,5 @@
+//adding event listener to the buttons
+
 var drums = document.querySelectorAll(".drum").length;
 for (var i = 0; i < drums; i++) {
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
@@ -19,6 +21,8 @@ document.addEventListener("keydown",function(event){
 });
 function makesound(key){
 
+  //assigning sounds to each key
+  
   switch (key) {
     case "w":
       var tom1 = new Audio("sounds/crash.mp3");
